@@ -24,6 +24,18 @@ var thisPage = function() {
         }
         
         alert(g.greeting);
+        shift();
+    }
+    
+    function shift() {
+        var t, elm;
+        t = 14;
+        elm = document.getElementById('p1');
+        if(elm) {
+            elm.innerHTML = t;
+            t = 14 << 2; 
+            elm.innerHTML = elm.innerHTML+ ', '+t;
+        }
     }
     
     var that = {};
