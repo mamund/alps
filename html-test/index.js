@@ -12,6 +12,17 @@ var thisPage = function() {
     g.greeting = "this is a test";
     
     function init() {
+        var elm;
+        
+        elm = document.getElementById('h1');
+        if(elm) {
+            elm.innerHTML = g.greeting;
+        }
+        elm = document.getElementById('p1');
+        if(elm) {
+            elm.innerHTML = g.greeting;
+        }
+        
         alert(g.greeting);
     }
     
