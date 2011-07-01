@@ -1,4 +1,3 @@
-// index.js  
 // 2011-06-30 (mca)
 
 var pg = null;
